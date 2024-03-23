@@ -5,6 +5,7 @@ class Personel:
 
     personel_sayisi = 0
     zam_orani = 1.05
+    yetkili_mi = False
 
     def __init__(self, isim, soyisim, maas):
         self.isim = isim.title()
@@ -49,3 +50,9 @@ print(per_1.zam_orani)
 print(per_2.zam_orani)
 
 print("Personellerimi oluşturduktan sonra : ", Personel.personel_sayisi)
+
+
+per_1.yetkili_mi = True
+
+pprint(per_1.__dict__)
+print(Personel.yetkili_mi)
